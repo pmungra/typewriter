@@ -9,7 +9,19 @@ for (const char of sentence) {
 */
 
 //Adding process.stdout.write
-
+/*
 for (const char of sentence) {
   process.stdout.write(char);
+}
+
+*/
+// Delaying The Display With setTimeout
+let start = 0;
+for (const char of sentence) {
+  
+  setTimeout(() => {
+    
+    process.stdout.write(char + "\n");
+  }, start); 
+    start += 50;
 }
